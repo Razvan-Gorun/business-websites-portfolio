@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Avocat Alexandru Popescu | Drept Penal și Civil</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Leaflet CSS (hartă) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- Stil principal -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header / Nume + titlu -->
+        <header class="site-header">
+            <h1>Alexandru Popescu</h1>
+            <p class="tagline">Avocat | Drept Penal & Drept Civil</p>
+            <div class="header-divider"></div>
+        </header>
+
+        <!-- Secțiunea principală: Chenar poză + Prezentare -->
+        <section class="hero-section">
+            <div class="photo-card">
+                <div class="photo-frame">
+                    <!-- Zona unde utilizatorul poate adăuga fotografia avocatului -->
+                    <img src="images/avocat.png" 
+                         alt="Portret avocat Alexandru Popescu - zonă pentru fotografie"
+                         id="lawyer-photo">
+                </div>
+                <div class="photo-caption">
+                    <i class="fas fa-camera"></i> Cadru pentru fotografia dvs.
+                </div>
+            </div>
+
+            <div class="intro-text">
+                <h2>Despre mine</h2>
+                <p class="intro-desc">
+                    Cu o experiență de peste <strong>15 ani</strong> în domeniul juridic, ofer asistență de înaltă calitate atât persoanelor fizice, cât și companiilor. 
+                    Sunt dedicat protejării drepturilor clienților mei cu integritate, profesionalism și abordare personalizată.
+                </p>
+                <div class="education-list">
+                    <div class="edu-item">
+                        <i class="fas fa-gavel"></i>
+                        <span>Facultatea de Drept, Universitatea din București</span>
+                    </div>
+                    <div class="edu-item">
+                        <i class="fas fa-scale-balanced"></i>
+                        <span>Master în Drept Penal</span>
+                    </div>
+                    <div class="edu-item">
+                        <i class="fas fa-chart-line"></i>
+                        <span>15+ Ani de Experiență</span>
+                    </div>
+                </div>
+                <a href="#contact" class="btn-consult"><i class="fas fa-calendar-check"></i> Solicită o consultație</a>
+            </div>
+        </section>
+
+        <!-- Realizări și specializări -->
+        <section class="achievements">
+            <h2 class="section-title">Realizări & Expertiză</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="icon-circle"><i class="fas fa-balance-scale"></i></div>
+                    <h3>500+</h3>
+                    <p>Cazuri rezolvate cu succes</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="icon-circle"><i class="fas fa-gavel"></i></div>
+                    <h3>Drept Penal</h3>
+                    <p>Apărare riguroasă și strategii personalizate</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="icon-circle"><i class="fas fa-handshake"></i></div>
+                    <h3>Drept Civil</h3>
+                    <p>Litigii, contracte, răspunderi civile</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="icon-circle"><i class="fas fa-building"></i></div>
+                    <h3>Instanțe Superioare</h3>
+                    <p>Reprezentare în Curtea de Apel și Înalta Curte</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="icon-circle"><i class="fas fa-chalkboard-user"></i></div>
+                    <h3>Consultanță Juridică</h3>
+                    <p>De calitate, adaptată nevoilor fiecărui client</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact + Hartă (Unde mă găsiți) -->
+        <section class="contact-map-section" id="contact">
+            <div class="contact-info">
+                <h2 class="section-title">Contact</h2>
+                <ul class="contact-details">
+                    <li><i class="fas fa-phone-alt"></i> <a href="tel:+40744123456">0744 123.456</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:contact@avocatpopescu.ro">contact@avocatpopescu.ro</a></li>
+                    <li><i class="fas fa-clock"></i> Luni - Vineri, 09:00 - 18:00</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Str. Ion Campineanu nr. 12, București</li>
+                </ul>
+                <div class="office-note">
+                    <i class="fas fa-star-of-life"></i> Programări și urgențe și în afara programului.
+                </div>
+            </div>
+            <div class="map-container">
+                <h2 class="section-title">Unde mă găsiți?</h2>
+                <div id="lawyerMap" class="map-frame"></div>
+                <p class="map-address"><i class="fas fa-location-dot"></i> Birou central - zona Universității</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; <span id="currentYear"></span> Alexandru Popescu - Avocat. Toate drepturile rezervate.</p>
+            <p class="footer-note">Informațiile de pe acest site au caracter informativ și nu constituie consultanță juridică.</p>
+        </footer>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Script personalizat -->
+    <script src="script.js"></script>
+</body>
+</html>
