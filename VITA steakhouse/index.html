@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Vita | Gustul Adevărat al Vitei</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome 6 (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">VITA<span> steakhouse</span></div>
+    <ul class="nav-links">
+      <li><a href="#acasa">Acasă</a></li>
+      <li><a href="#specialitati">Specialități</a></li>
+      <li><a href="#rezerva">Rezervări</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="acasa" class="hero">
+      <div class="container hero-content">
+        <h1>Gustul Adevărat al Vitei</h1>
+        <p class="hero-sub">Fripturi Premium Gătite la Perfecțiune</p>
+        <a href="#rezerva" class="btn btn-primary btn-hero">Vezi Meniul</a>
+      </div>
+      <div class="hero-bg-shape"></div>
+    </section>
+
+    <!-- Features / 3 pillars -->
+    <section class="features">
+      <div class="container features-grid">
+        <div class="feature-card">
+          <i class="fas fa-utensils"></i>
+          <h3>Steak-uri Suculente</h3>
+          <p>Cele mai fine bucăți din vita Angus și Black Angus, maturate uscat pentru o textură desăvârșită.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-fire"></i>
+          <h3>Bucătărie de Top</h3>
+          <p>Prepături pasionale, pe grătar cu jar de lemn de fag și cărbune premium.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-wine-glass-alt"></i>
+          <h3>Atmosferă Elegantă</h3>
+          <p>Locatie rafinată, iluminat cald și detalii perfecte pentru seri memorabile.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specialties section -->
+    <section id="specialitati" class="specials">
+      <div class="container">
+        <div class="section-header">
+          <h2>Specialitățile Noastre</h2>
+          <p>Recomandările Chef‑ului</p>
+        </div>
+        <div class="specials-grid">
+          <!-- Ribeye -->
+          <div class="special-card" data-item="ribeye">
+            <div class="card-icon"><i class="fas fa-drumstick-bite"></i></div>
+            <h3>Ribeye Steak</h3>
+            <p>Marmorare perfectă, 300g, grătar cu cărbuni, servit cu unt de trufă și cartofi natur.</p>
+            <button class="btn-details" data-item="Ribeye Steak">Vezi Detalii</button>
+          </div>
+          <!-- Tomahawk -->
+          <div class="special-card" data-item="tomahawk">
+            <div class="card-icon"><i class="fas fa-hand-peace"></i></div>
+            <h3>Tomahawk Steak</h3>
+            <p>Impresionantul 1.2kg, os lung, crustă de ierburi aromatice, pentru doi gurmanzi.</p>
+            <button class="btn-details" data-item="Tomahawk Steak">Vezi Detalii</button>
+          </div>
+          <!-- Beef Burger -->
+          <div class="special-card" data-item="burger">
+            <div class="card-icon"><i class="fas fa-hamburger"></i></div>
+            <h3>Beef Burger</h3>
+            <p>Chiftea 200g de vită Angus, cheddar afumat, bacon caramelizat și sos secret.</p>
+            <button class="btn-details" data-item="Beef Burger">Vezi Detalii</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="rezerva" class="reservation">
+      <div class="container reservation-container">
+        <div class="reservation-info">
+          <h2>Rezervă o Masă</h2>
+          <p>Savurează o cină de neuitat într-un cadru unic. Completează formularul și bucură-te de o experiență premium.</p>
+          <div class="info-detail">
+            <i class="fas fa-phone-alt"></i> <span>+40 712 345 678</span>
+          </div>
+          <div class="info-detail">
+            <i class="fas fa-envelope"></i> <span>rezervari@vitasteak.ro</span>
+          </div>
+        </div>
+        <div class="reservation-form">
+          <form id="bookingForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Nume complet" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" placeholder="Telefon" required>
+            </div>
+            <div class="form-group">
+              <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+              <select id="guests" required>
+                <option value="" disabled selected>Număr de persoane</option>
+                <option>1 persoană</option>
+                <option>2 persoane</option>
+                <option>3 persoane</option>
+                <option>4 persoane</option>
+                <option>5+ persoane</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea rows="3" placeholder="Preferințe / mesaj special (opțional)"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Rezervă Acum</button>
+          </form>
+          <div id="reservationFeedback" class="feedback-message"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container footer-content">
+      <div class="footer-col">
+        <h3>VITA Steakhouse</h3>
+        <p>Gustul autentic al cărnii de vită, gătită cu pasiune și tradiție.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Program</h4>
+        <p>Luni – Joi: 17:00 – 23:00</p>
+        <p>Vineri – Duminică: 16:00 – 00:00</p>
+      </div>
+      <div class="footer-col">
+        <h4>Locație</h4>
+        <p>Bulevardul Gastronomiei 28, București</p>
+        <div class="social-icons">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-tripadvisor"></i>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 VITA Steakhouse – Gustul Adevărat al Vitei</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
