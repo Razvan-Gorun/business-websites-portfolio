@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>CleanMaster | Curățenie Profesională</title>
+  <!-- Font Awesome 6 (doar iconițe) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- CSS separat -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">CleanMaster<span>PRO</span></div>
+      <ul class="nav-links">
+        <li><a href="#acasa">Acasă</a></li>
+        <li><a href="#servicii">Servicii</a></li>
+        <li><a href="#beneficii">De ce noi</a></li>
+        <li><a href="#programare">Programare</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero / Acasă -->
+  <section id="acasa" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1>Servicii de Curățenie Profesionale<br>Locuințe și Birouri Impecabile!</h1>
+          <p>Echipă dedicată, soluții ecologice și rezultate garantate. Curățenie premium fără compromisuri.</p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary" id="openOfferModalBtn"><i class="fas fa-file-signature"></i> Solicită Ofertă</button>
+            <a href="#servicii" class="btn btn-outline"><i class="fas fa-chevron-circle-down"></i> Află Mai Mult</a>
+          </div>
+        </div>
+        <div class="hero-decor">
+          <i class="fas fa-broom"></i>
+          <i class="fas fa-spray-can-sparkles"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicii -->
+  <section id="servicii">
+    <div class="container">
+      <h2 class="section-title">Servicii de curățenie adaptate nevoilor tale</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-home"></i></div>
+          <h3>Curățenie Rezidențială</h3>
+          <p>Pentru casa ta curată și ordonată. Curățenie temeinică, aspirare, igienizare și strălucire.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-building"></i></div>
+          <h3>Curățenie Comercială</h3>
+          <p>Servicii pentru birouri și spații comerciale. Igienă profesională, eficiență maximă.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-hard-hat"></i></div>
+          <h3>Curățenie Post-Construcție</h3>
+          <p>Curățenie după renovări și construcții. Îndepărtăm praful fin și resturile impecabil.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- De ce să ne alegi -->
+  <section id="beneficii" class="benefits-section">
+    <div class="container">
+      <h2 class="section-title">De Ce Să Ne Alegi Pe Noi?</h2>
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <div class="benefit-icon"><i class="fas fa-user-check"></i></div>
+          <h3>Personal Calificat</h3>
+          <p>Echipă profesionistă și de încredere, verificată și instruită constant.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon"><i class="fas fa-microchip"></i></div>
+          <h3>Echipamente Moderne</h3>
+          <p>Utilaje și soluții de curățare de ultimă generație, eficiente și ecologice.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon"><i class="fas fa-medal"></i></div>
+          <h3>Garanția Satisfacției</h3>
+          <p>100% Satisfacție Garantată. Dacă nu ești mulțumit, revenim fără costuri.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoniale -->
+  <section class="testimonial">
+    <div class="container">
+      <h2 class="section-title">Ce spun clienții noștri?</h2>
+      <div class="testimonial-card">
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        <p class="testimonial-text">"Super mulțumită de serviciile oferite! Echipa punctuală și foarte atentă la detalii. Recomand cu încredere!"</p>
+        <p class="testimonial-author">— Andreea M.</p>
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programare formular -->
+  <section id="programare">
+    <div class="container">
+      <h2 class="section-title">Programează Curățenia Acum!</h2>
+      <p class="section-sub">Rapid și Eficient: Alege data potrivită pentru curățenie. Completează formularul și îți confirmăm în maxim 2 ore.</p>
+      <div class="schedule-form">
+        <form id="scheduleForm">
+          <div class="form-group">
+            <label><i class="fas fa-user"></i> Nume complet</label>
+            <input type="text" id="nume" placeholder="Ex: Maria Popescu" required>
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-phone-alt"></i> Telefon</label>
+            <input type="tel" id="telefon" placeholder="0722 123 456" required>
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-calendar-alt"></i> Data Dorită</label>
+            <input type="date" id="dataDorita" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-check-circle"></i> Trimite cererea</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parteneri -->
+  <section class="partners">
+    <div class="container">
+      <h2 class="section-title" style="margin-bottom: 32px;">Partenerii Noștri</h2>
+      <div class="partner-logos">
+        <div class="partner-item">TechVision</div>
+        <div class="partner-item">EcoHome</div>
+        <div class="partner-item">Global Solutions</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="container">
+    <p>© 2024 CleanMaster. Toate drepturile rezervate.</p>
+    <p style="margin-top: 10px;"><i class="fas fa-envelope"></i> contact@cleanmaster.ro | <i class="fas fa-phone"></i> 0800 123 456</p>
+  </div>
+</footer>
+
+<!-- Modal Solicită Ofertă -->
+<div id="offerModal" class="modal">
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+    <h3 style="margin-bottom: 20px;">Solicită o ofertă personalizată</h3>
+    <form id="offerForm">
+      <div class="form-group">
+        <label>Nume complet</label>
+        <input type="text" id="offerNume" required>
+      </div>
+      <div class="form-group">
+        <label>Telefon</label>
+        <input type="tel" id="offerTelefon" required>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="offerEmail" required>
+      </div>
+      <div class="form-group">
+        <label>Tip serviciu dorit</label>
+        <input type="text" id="offerServiciu" placeholder="ex: Curățenie rezidențială">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Trimite cererea</button>
+    </form>
+  </div>
+</div>
+
+<!-- JavaScript separat -->
+<script src="script.js"></script>
+</body>
+</html>
