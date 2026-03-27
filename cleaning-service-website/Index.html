@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>ElectroPro | Electricieni Profesioniști</title>
+  <!-- Google Fonts + Font Awesome 6 (no images, pure vector icons) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MODAL (hidden by default) pentru contact / solicitare ofertă -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3 id="modalTitle">Formular Contact</h3>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Nume complet *</label>
+          <input type="text" id="name" name="name" required placeholder="Popescu Ion">
+        </div>
+        <div class="form-group">
+          <label for="phone">Telefon *</label>
+          <input type="tel" id="phone" name="phone" required placeholder="07xx xxx xxx">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="nume@exemplu.ro">
+        </div>
+        <div class="form-group">
+          <label for="message">Mesaj / Detalii</label>
+          <textarea id="message" name="message" rows="3" placeholder="Descrieți necesitățile dvs. ..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Trimite cererea <i class="fas fa-paper-plane"></i></button>
+        <p id="formFeedback" class="feedback-msg"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- MAIN WEBSITE -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-container">
+        <div class="hero-badge">
+          <i class="fas fa-bolt"></i> PROFESIONIȘTI CERTIFICAȚI
+        </div>
+        <h1 class="hero-title">ELECTRICIAN</h1>
+        <p class="hero-subtitle">SERVICII ELECTRICE PROFESIONALE</p>
+        <div class="hero-divider"></div>
+        <p class="hero-tagline">Instalații & Reparații Electrice de Încredere</p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary" id="solicitaOfertaBtn"><i class="fas fa-file-signature"></i> Solicită Ofertă</button>
+          <button class="btn btn-outline" id="aflaMaiMultBtn"><i class="fas fa-circle-info"></i> Află Mai Mult</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trei caracteristici rapide (cards) -->
+    <section class="features">
+      <div class="container features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-clock"></i></div>
+          <h3>Intervenții Rapide</h3>
+          <p>Disponibil Non-Stop 24/7 pentru urgențe electrice. Echipaje pregătite să ajungă rapid.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-trophy"></i></div>
+          <h3>Experiență & Clienți</h3>
+          <p>Peste 15 Ani de Experiență și mii de clienți mulțumiți în toată țara.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+          <h3>Garanție Lucrări</h3>
+          <p>100% Satisfacție Garantată. Oferim garanție extinsă pentru toate intervențiile.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviciile Noastre -->
+    <section class="services" id="servicii">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Ce Oferim</span>
+          <h2>Serviciile Noastre</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-plug"></i></div>
+            <h3>Instalații Electrice</h3>
+            <p>Proiectare, montaj și modernizare instalații electrice rezidențiale, comerciale și industriale.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-tools"></i></div>
+            <h3>Reparații & Defecțiuni</h3>
+            <p>Diagnosticare rapidă, depanare siguranțe, scurtcircuite, înlocuire componente defecte.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+            <h3>Mentenanță și Verificări</h3>
+            <p>Verificări periodice, termografii, măsurători de izolație și protecție împotriva supratensiunilor.</p>
+          </div>
+        </div>
+        <div class="services-footer">
+          <button id="veziToateServiciileBtn" class="btn-secondary">Vezi Toate Serviciile <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- De ce să ne alegi pe noi? -->
+    <section class="why-us" id="despre">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Avantaje competitive</span>
+          <h2>De Ce Să Ne Alegi Pe Noi?</h2>
+          <p class="subhead">Profesioniști de încredere pentru orice lucrare electrică!</p>
+        </div>
+        <div class="reasons-grid">
+          <div class="reason-item">
+            <i class="fas fa-user-graduate"></i>
+            <div>
+              <h4>Electricieni Calificați</h4>
+              <p>Personal autorizat ANRE, cu pregătire continuă și experiență vastă.</p>
+            </div>
+          </div>
+          <div class="reason-item">
+            <i class="fas fa-microchip"></i>
+            <div>
+              <h4>Echipamente Moderne</h4>
+              <p>Unelte profesionale, camere termice, analizoare de rețea și soluții smart.</p>
+            </div>
+          </div>
+          <div class="reason-item">
+            <i class="fas fa-coins"></i>
+            <div>
+              <h4>Prețuri Competitive</h4>
+              <p>Oferte personalizate, raport calitate-preț excelent, fără costuri ascunse.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final + Contact -->
+    <section class="cta-section">
+      <div class="container cta-container">
+        <div class="cta-content">
+          <h3>Ai Nevoie de Ajutor?</h3>
+          <p>Contactează-ne acum pentru a consulta gratuit un specialist și a primi oferta personalizată!</p>
+          <button id="contacteazaBtn" class="btn btn-large"><i class="fas fa-headset"></i> Contactează-ne</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <i class="fas fa-bolt"></i> <span>ELECTRICIAN PRO</span>
+          <p>Servicii electrice complete – siguranță, profesionalism și eficiență energetică.</p>
+        </div>
+        <div class="footer-contact">
+          <p><i class="fas fa-phone-alt"></i> 0800 123 456</p>
+          <p><i class="fas fa-envelope"></i> contact@electricianpro.ro</p>
+          <p><i class="fas fa-map-marker-alt"></i> București / Cluj / Timișoara</p>
+        </div>
+        <div class="footer-copy">
+          <p>&copy; 2026 ElectricianPro – Toate drepturile rezervate.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
