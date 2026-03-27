@@ -1,2 +1,18 @@
-# business-websites-portfolio
-Professional collection of modern business websites, designed for portfolio and client work. Includes various industries, such as law, restaurants, cleaning services, and technical services. Focused on clean UI/UX and responsive design.
+# Business Websites Portfolio
+
+This repository contains multiple modern websites created for different types of businesses.
+
+## Projects included:
+- Lawyer Website
+- Restaurant Website
+- Cleaning Services Website
+- Electrician Website
+- Gym Website
+
+## Technologies used:
+- HTML
+- CSS
+- JavaScript
+
+## Purpose:
+Portfolio projects for showcasing web development skills and client-ready designs.
